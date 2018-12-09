@@ -16,4 +16,5 @@
     <string name="btn_cancelar">Cancelar</string>
     <string name="nome_trilheiro">Nome do trilheiro</string>
     <string name="idade_trilheiro">Idade do trilheiro</string>
+    <string name="btn_sobre">Sobre</string>
 </resources>

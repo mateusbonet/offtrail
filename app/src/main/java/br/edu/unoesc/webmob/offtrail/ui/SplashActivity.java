@@ -8,11 +8,13 @@ import android.view.Window;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;
+import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Fullscreen;
 import org.androidannotations.annotations.WindowFeature;
 
 import br.edu.unoesc.webmob.offtrail.R;
+import br.edu.unoesc.webmob.offtrail.helper.DatabaseHelper;
 
 @EActivity(R.layout.activity_splash)
 @Fullscreen

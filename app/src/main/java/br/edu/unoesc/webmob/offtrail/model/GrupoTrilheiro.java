@@ -6,19 +6,19 @@ import com.j256.ormlite.table.DatabaseTable;
 import java.util.Date;
 
 @DatabaseTable
-public class Grupo_Trilheiro {
+public class GrupoTrilheiro {
 
-    public Grupo_Trilheiro() {
+    public GrupoTrilheiro() {
 
     }
 
     @DatabaseField(generatedId = true)
     private Integer codigo;
 
-    @DatabaseField
+    @DatabaseField(foreign = true, foreignColumnName = "codigo")
     private Trilheiro trilheiro;
 
-    @DatabaseField
+    @DatabaseField(foreign = true, foreignColumnName = "codigo")
     private Grupo grupo;
 
     @DatabaseField

@@ -3,11 +3,18 @@ package br.edu.unoesc.webmob.offtrail.model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 @DatabaseTable
-public class Moto {
+public class Moto implements Serializable {
 
     public Moto(){
 
+    }
+
+    @Override
+    public String toString() {
+        return getModeloMoto() + " - " + getCilindradasMoto();
     }
 
     @DatabaseField(generatedId = true)
@@ -15,6 +22,9 @@ public class Moto {
 
     @DatabaseField
     private String descricaoMoto;
+
+    @DatabaseField
+    private String modeloMoto;
 
     @DatabaseField
     private String descricaoMarca;
@@ -63,5 +73,13 @@ public class Moto {
 
     public void setCorMoto(String corMoto) {
         this.corMoto = corMoto;
+    }
+
+    public String getModeloMoto() {
+        return modeloMoto;
+    }
+
+    public void setModeloMoto(String modeloMoto) {
+        this.modeloMoto = modeloMoto;
     }
 }
